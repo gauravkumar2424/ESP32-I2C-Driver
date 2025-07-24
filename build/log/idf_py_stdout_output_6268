@@ -1,0 +1,75 @@
+Command: /root/.espressif/python_env/idf5.5_py3.12_env/bin/python /root/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /root/DSA/I2C/build/I2C.elf /root/DSA/I2C/build/bootloader/bootloader.elf -m '/root/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/root/esp/esp-idf/tools/idf.py'
+[0;32mI (106) esp_image: segment 1: paddr=0001a920 vaddr=3fc92700 sizeio: Enable automatic switching of GPIO sleep configuratioESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048841
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2820,len:0x159c
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f48
+entry 0x403c8924
+[0;32mI (32) boot: ESP-IDF v5.5-1-gb66b5448e0 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Jul 25 2025 02:03:12[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.1[0m
+[0;32mI (36) boot: efuse block revision: v1.2[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a8f8h ( 43256) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001a920 vaddr=3fc92700 size=02ad8h ( 10968) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001d400 vaddr=40374000 size=02c18h ( 11288) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=19204h (102916) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=0003922c vaddr=40376c18 size=0ba4ch ( 47692) load[0m
+[0;32mI (156) esp_image: segment 5: paddr=00044c80 vaddr=600fe000 size=00020h (    32) load[0m
+[0;32mI (162) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (162) boot: Disabling RNG early entropy source...[0m
+[0;32mI (174) cpu_start: Multicore app[0m
+[0;32mI (183) cpu_start: Pro cpu start user code[0m
+[0;32mI (183) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (183) app_init: Application information:[0m
+[0;32mI (183) app_init: Project name:     I2C[0m
+[0;32mI (187) app_init: App version:      1[0m
+[0;32mI (190) app_init: Compile time:     Jul 25 2025 02:03:09[0m
+[0;32mI (195) app_init: ELF file SHA256:  29249cf66...[0m
+[0;32mI (199) app_init: ESP-IDF:          v5.5-1-gb66b5448e0[0m
+[0;32mI (204) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (208) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (212) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (216) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (222) heap_init: At 3FC95AD8 len 00053C38 (335 KiB): RAM[0m
+[0;32mI (227) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (232) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 600FE020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;33mW (243) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (253) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (257) spi_flash: flash io: opi_str[0m
+[0;33mW (260) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (272) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (279) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (285) main_task: Started on CPU0[0m
+[0;32mI (295) main_task: Calling app_main()[0m
+[0;32mI (295) I2C_LOW_LEVEL: I2C0 initialized: SDA=9, SCL=8, Freq=100000 Hz[0m
+[0;32mI (295) MAIN: Scanning I2C bus...[0m
+[0;33mW (405) I2C_LOW_LEVEL: I2C write failed, retrying (2 left)[0m
+[0;33mW (515) I2C_LOW_LEVEL: I2C write failed, retrying (1 left)[0m
+[0;33mW (625) I2C_LOW_LEVEL: I2C write failed, retrying (0 left)[0m
+[1;31mE (635) I2C_LOW_LEVEL: I2C write failed after 3 retries[0m
+[1;31mE (635) MAIN: EEPROM write failed: ESP_ERR_TIMEOUT[0m
+[0;33mW (735) I2C_LOW_LEVEL: I2C write failed, retrying (2 left)[0m
+[0;33mW (845) I2C_LOW_LEVEL: I2C write failed, retrying (1 left)[0m
+[0;33mW (955) I2C_LOW_LEVEL: I2C write failed, retrying (0 left)[0m
+[1;31mE (965) I2C_LOW_LEVEL: I2C write failed after 3 retries[0m
+[1;31mE (965) MAIN: EEPROM read failed: ESP_ERR_TIMEOUT[0m
+[0;32mI (965) I2C_LOW_LEVEL: I2C0 deinitialized[0m
+[0;32mI (965) main_task: Returned from app_main()[0m

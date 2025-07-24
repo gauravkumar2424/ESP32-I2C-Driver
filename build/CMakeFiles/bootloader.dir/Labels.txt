@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/root/DSA/I2C/build/CMakeFiles/bootloader
+/root/DSA/I2C/build/CMakeFiles/bootloader.rule
+/root/DSA/I2C/build/CMakeFiles/bootloader-complete.rule
+/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

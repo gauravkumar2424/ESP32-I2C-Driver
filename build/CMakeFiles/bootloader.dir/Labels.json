@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/root/DSA/I2C/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/root/DSA/I2C/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/root/DSA/I2C/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		},
+		{
+			"file" : "/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/root/DSA/I2C/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

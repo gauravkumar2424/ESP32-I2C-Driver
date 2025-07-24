@@ -1,0 +1,1 @@
+cmd='/usr/local/cmake-3.16.0/bin/cmake;-DSDKCONFIG=/root/DSA/I2C/sdkconfig;-DIDF_PATH=/root/esp/esp-idf;-DIDF_TARGET=esp32s3;-DPYTHON_DEPS_CHECKED=1;-DPYTHON=/root/.espressif/python_env/idf5.5_py3.12_env/bin/python;-DEXTRA_COMPONENT_DIRS=/root/esp/esp-idf/components/bootloader;-DPROJECT_SOURCE_DIR=/root/DSA/I2C;-DIGNORE_EXTRA_COMPONENT=;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'

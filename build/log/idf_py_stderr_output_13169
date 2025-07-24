@@ -1,0 +1,10 @@
+Command: /root/.espressif/python_env/idf5.5_py3.12_env/bin/python /root/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /root/DSA/I2C/build/I2C.elf /root/DSA/I2C/build/bootloader/bootloader.elf -m '/root/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/root/esp/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40377d3a: esp_cpu_wait_for_intr at /root/esp/esp-idf/components/esp_hw_support/cpu.c:64
+[0m
+[0;33m--- 0x403c8700: _stext at ??:?
+[0m
+[0;33m--- 0x403c8924: call_start_cpu0 at /root/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c:25
+[0m
+[0m

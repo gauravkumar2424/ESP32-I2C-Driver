@@ -1,0 +1,97 @@
+Command: ninja all
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /root/DSA/I2C/build/bootloader/esp-idf/esptool_py && /root/.espressif/python_env/idf5.5_py3.12_env/bin/python /root/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /root/DSA/I2C/build/bootloader/bootloader.bin
+Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/i2c_low_level.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/i2c_low_level.c.obj 
+/root/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.5-dev-3598-g7cf5dacd4a\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -Iconfig -I../main -I/root/esp/esp-idf/components/newlib/platform_include -I/root/esp/esp-idf/components/freertos/config/include -I/root/esp/esp-idf/components/freertos/config/include/freertos -I/root/esp/esp-idf/components/freertos/config/xtensa/include -I/root/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/root/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/root/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/root/esp/esp-idf/components/freertos/esp_additions/include -I/root/esp/esp-idf/components/esp_hw_support/include -I/root/esp/esp-idf/components/esp_hw_support/include/soc -I/root/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/root/esp/esp-idf/components/esp_hw_support/dma/include -I/root/esp/esp-idf/components/esp_hw_support/ldo/include -I/root/esp/esp-idf/components/esp_hw_support/debug_probe/include -I/root/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/include -I/root/esp/esp-idf/components/esp_hw_support/power_supply/include -I/root/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/root/esp/esp-idf/components/esp_hw_support/port/esp32s3/include -I/root/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -I/root/esp/esp-idf/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -I/root/esp/esp-idf/components/heap/include -I/root/esp/esp-idf/components/heap/tlsf -I/root/esp/esp-idf/components/log/include -I/root/esp/esp-idf/components/soc/include -I/root/esp/esp-idf/components/soc/esp32s3 -I/root/esp/esp-idf/components/soc/esp32s3/include -I/root/esp/esp-idf/components/soc/esp32s3/register -I/root/esp/esp-idf/components/hal/platform_port/include -I/root/esp/esp-idf/components/hal/esp32s3/include -I/root/esp/esp-idf/components/hal/include -I/root/esp/esp-idf/components/esp_rom/include -I/root/esp/esp-idf/components/esp_rom/esp32s3/include -I/root/esp/esp-idf/components/esp_rom/esp32s3/include/esp32s3 -I/root/esp/esp-idf/components/esp_rom/esp32s3 -I/root/esp/esp-idf/components/esp_common/include -I/root/esp/esp-idf/components/esp_system/include -I/root/esp/esp-idf/components/esp_system/port/soc -I/root/esp/esp-idf/components/esp_system/port/include/private -I/root/esp/esp-idf/components/xtensa/esp32s3/include -I/root/esp/esp-idf/components/xtensa/include -I/root/esp/esp-idf/components/xtensa/deprecated_include -I/root/esp/esp-idf/components/lwip/include -I/root/esp/esp-idf/components/lwip/include/apps -I/root/esp/esp-idf/components/lwip/include/apps/sntp -I/root/esp/esp-idf/components/lwip/lwip/src/include -I/root/esp/esp-idf/components/lwip/port/include -I/root/esp/esp-idf/components/lwip/port/freertos/include -I/root/esp/esp-idf/components/lwip/port/esp32xx/include -I/root/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/root/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/root/esp/esp-idf/components/esp_driver_gpio/include -I/root/esp/esp-idf/components/esp_pm/include -I/root/esp/esp-idf/components/mbedtls/port/include -I/root/esp/esp-idf/components/mbedtls/mbedtls/include -I/root/esp/esp-idf/components/mbedtls/mbedtls/library -I/root/esp/esp-idf/components/mbedtls/esp_crt_bundle/include -I/root/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -I/root/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -I/root/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -I/root/esp/esp-idf/components/esp_app_format/include -I/root/esp/esp-idf/components/esp_bootloader_format/include -I/root/esp/esp-idf/components/app_update/include -I/root/esp/esp-idf/components/bootloader_support/include -I/root/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/root/esp/esp-idf/components/esp_partition/include -I/root/esp/esp-idf/components/efuse/include -I/root/esp/esp-idf/components/efuse/esp32s3/include -I/root/esp/esp-idf/components/esp_mm/include -I/root/esp/esp-idf/components/spi_flash/include -I/root/esp/esp-idf/components/esp_security/include -I/root/esp/esp-idf/components/pthread/include -I/root/esp/esp-idf/components/esp_timer/include -I/root/esp/esp-idf/components/esp_driver_gptimer/include -I/root/esp/esp-idf/components/esp_ringbuf/include -I/root/esp/esp-idf/components/esp_driver_uart/include -I/root/esp/esp-idf/components/vfs/include -I/root/esp/esp-idf/components/app_trace/include -I/root/esp/esp-idf/components/esp_event/include -I/root/esp/esp-idf/components/nvs_flash/include -I/root/esp/esp-idf/components/esp_phy/include -I/root/esp/esp-idf/components/esp_phy/esp32s3/include -I/root/esp/esp-idf/components/esp_driver_usb_serial_jtag/include -I/root/esp/esp-idf/components/esp_vfs_console/include -I/root/esp/esp-idf/components/esp_netif/include -I/root/esp/esp-idf/components/wpa_supplicant/include -I/root/esp/esp-idf/components/wpa_supplicant/port/include -I/root/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/root/esp/esp-idf/components/esp_coex/include -I/root/esp/esp-idf/components/esp_wifi/include -I/root/esp/esp-idf/components/esp_wifi/include/local -I/root/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/root/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/root/esp/esp-idf/components/esp_driver_spi/include -I/root/esp/esp-idf/components/esp_gdbstub/include -I/root/esp/esp-idf/components/unity/include -I/root/esp/esp-idf/components/unity/unity/src -I/root/esp/esp-idf/components/cmock/CMock/src -I/root/esp/esp-idf/components/console -I/root/esp/esp-idf/components/esp_driver_pcnt/include -I/root/esp/esp-idf/components/esp_driver_mcpwm/include -I/root/esp/esp-idf/components/esp_driver_ana_cmpr/include -I/root/esp/esp-idf/components/esp_driver_i2s/include -I/root/esp/esp-idf/components/sdmmc/include -I/root/esp/esp-idf/components/esp_driver_sdmmc/include -I/root/esp/esp-idf/components/esp_driver_sdspi/include -I/root/esp/esp-idf/components/esp_driver_sdio/include -I/root/esp/esp-idf/components/esp_driver_dac/include -I/root/esp/esp-idf/components/esp_driver_bitscrambler/include -I/root/esp/esp-idf/components/esp_driver_rmt/include -I/root/esp/esp-idf/components/esp_driver_tsens/include -I/root/esp/esp-idf/components/esp_driver_sdm/include -I/root/esp/esp-idf/components/esp_driver_i2c/include -I/root/esp/esp-idf/components/esp_driver_ledc/include -I/root/esp/esp-idf/components/esp_driver_parlio/include -I/root/esp/esp-idf/components/esp_driver_twai/include -I/root/esp/esp-idf/components/driver/deprecated -I/root/esp/esp-idf/components/driver/i2c/include -I/root/esp/esp-idf/components/driver/touch_sensor/include -I/root/esp/esp-idf/components/driver/twai/include -I/root/esp/esp-idf/components/driver/touch_sensor/esp32s3/include -I/root/esp/esp-idf/components/http_parser -I/root/esp/esp-idf/components/esp-tls -I/root/esp/esp-idf/components/esp-tls/esp-tls-crypto -I/root/esp/esp-idf/components/esp_adc/include -I/root/esp/esp-idf/components/esp_adc/interface -I/root/esp/esp-idf/components/esp_adc/esp32s3/include -I/root/esp/esp-idf/components/esp_adc/deprecated/include -I/root/esp/esp-idf/components/esp_driver_isp/include -I/root/esp/esp-idf/components/esp_driver_cam/include -I/root/esp/esp-idf/components/esp_driver_cam/interface -I/root/esp/esp-idf/components/esp_psram/include -I/root/esp/esp-idf/components/esp_psram/xip_impl/include -I/root/esp/esp-idf/components/esp_driver_jpeg/include -I/root/esp/esp-idf/components/esp_driver_ppa/include -I/root/esp/esp-idf/components/esp_driver_touch_sens/include -I/root/esp/esp-idf/components/esp_driver_touch_sens/hw_ver2/include -I/root/esp/esp-idf/components/esp_eth/include -I/root/esp/esp-idf/components/esp_hid/include -I/root/esp/esp-idf/components/tcp_transport/include -I/root/esp/esp-idf/components/esp_http_client/include -I/root/esp/esp-idf/components/esp_http_server/include -I/root/esp/esp-idf/components/esp_https_ota/include -I/root/esp/esp-idf/components/esp_https_server/include -I/root/esp/esp-idf/components/esp_lcd/include -I/root/esp/esp-idf/components/esp_lcd/interface -I/root/esp/esp-idf/components/esp_lcd/rgb/include -I/root/esp/esp-idf/components/protobuf-c/protobuf-c -I/root/esp/esp-idf/components/protocomm/include/common -I/root/esp/esp-idf/components/protocomm/include/security -I/root/esp/esp-idf/components/protocomm/include/transports -I/root/esp/esp-idf/components/protocomm/include/crypto/srp6a -I/root/esp/esp-idf/components/protocomm/proto-c -I/root/esp/esp-idf/components/esp_local_ctrl/include -I/root/esp/esp-idf/components/espcoredump/include -I/root/esp/esp-idf/components/espcoredump/include/port/xtensa -I/root/esp/esp-idf/components/wear_levelling/include -I/root/esp/esp-idf/components/fatfs/diskio -I/root/esp/esp-idf/components/fatfs/src -I/root/esp/esp-idf/components/fatfs/vfs -I/root/esp/esp-idf/components/idf_test/include -I/root/esp/esp-idf/components/idf_test/include/esp32s3 -I/root/esp/esp-idf/components/ieee802154/include -I/root/esp/esp-idf/components/json/cJSON -I/root/esp/esp-idf/components/mqtt/esp-mqtt/include -I/root/esp/esp-idf/components/nvs_sec_provider/include -I/root/esp/esp-idf/components/perfmon/include -I/root/esp/esp-idf/components/rt/include -I/root/esp/esp-idf/components/spiffs/include -I/root/esp/esp-idf/components/touch_element/include -I/root/esp/esp-idf/components/usb/include -I/root/esp/esp-idf/components/wifi_provisioning/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy   -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/root/DSA/I2C=. -fmacro-prefix-map=/root/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/i2c_low_level.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/i2c_low_level.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/i2c_low_level.c.obj   -c ../main/i2c_low_level.c
+../main/i2c_low_level.c: In function 'i2c_low_level_write':
+../main/i2c_low_level.c:140:17: error: 'i2c_comd_reg_t' has no member named 'op_code'
+  140 |     i2c->comd[0].op_code = 0; // START
+      |                 ^
+../main/i2c_low_level.c:141:17: error: 'i2c_comd_reg_t' has no member named 'byte_num'
+  141 |     i2c->comd[0].byte_num = 0;
+      |                 ^
+../main/i2c_low_level.c:142:17: error: 'i2c_comd_reg_t' has no member named 'ack_en'
+  142 |     i2c->comd[0].ack_en = 0;
+      |                 ^
+../main/i2c_low_level.c:143:17: error: 'i2c_comd_reg_t' has no member named 'done'
+  143 |     i2c->comd[0].done = 1;
+      |                 ^
+../main/i2c_low_level.c:146:17: error: 'i2c_comd_reg_t' has no member named 'op_code'
+  146 |     i2c->comd[1].op_code = 2; // WRITE
+      |                 ^
+../main/i2c_low_level.c:147:17: error: 'i2c_comd_reg_t' has no member named 'byte_num'
+  147 |     i2c->comd[1].byte_num = 1 + length; // Device address + data
+      |                 ^
+../main/i2c_low_level.c:148:17: error: 'i2c_comd_reg_t' has no member named 'ack_en'
+  148 |     i2c->comd[1].ack_en = 1;
+      |                 ^
+../main/i2c_low_level.c:149:17: error: 'i2c_comd_reg_t' has no member named 'done'
+  149 |     i2c->comd[1].done = 1;
+      |                 ^
+../main/i2c_low_level.c:152:17: error: 'i2c_comd_reg_t' has no member named 'op_code'
+  152 |     i2c->comd[2].op_code = 1; // STOP
+      |                 ^
+../main/i2c_low_level.c:153:17: error: 'i2c_comd_reg_t' has no member named 'byte_num'
+  153 |     i2c->comd[2].byte_num = 0;
+      |                 ^
+../main/i2c_low_level.c:154:17: error: 'i2c_comd_reg_t' has no member named 'ack_en'
+  154 |     i2c->comd[2].ack_en = 0;
+      |                 ^
+../main/i2c_low_level.c:155:17: error: 'i2c_comd_reg_t' has no member named 'done'
+  155 |     i2c->comd[2].done = 1;
+      |                 ^
+../main/i2c_low_level.c: In function 'i2c_low_level_read':
+../main/i2c_low_level.c:183:17: error: 'i2c_comd_reg_t' has no member named 'op_code'
+  183 |     i2c->comd[0].op_code = 0; // START
+      |                 ^
+../main/i2c_low_level.c:184:17: error: 'i2c_comd_reg_t' has no member named 'byte_num'
+  184 |     i2c->comd[0].byte_num = 0;
+      |                 ^
+../main/i2c_low_level.c:185:17: error: 'i2c_comd_reg_t' has no member named 'ack_en'
+  185 |     i2c->comd[0].ack_en = 0;
+      |                 ^
+../main/i2c_low_level.c:186:17: error: 'i2c_comd_reg_t' has no member named 'done'
+  186 |     i2c->comd[0].done = 1;
+      |                 ^
+../main/i2c_low_level.c:189:17: error: 'i2c_comd_reg_t' has no member named 'op_code'
+  189 |     i2c->comd[1].op_code = 2; // WRITE (address)
+      |                 ^
+../main/i2c_low_level.c:190:17: error: 'i2c_comd_reg_t' has no member named 'byte_num'
+  190 |     i2c->comd[1].byte_num = 1;
+      |                 ^
+../main/i2c_low_level.c:191:17: error: 'i2c_comd_reg_t' has no member named 'ack_en'
+  191 |     i2c->comd[1].ack_en = 1;
+      |                 ^
+../main/i2c_low_level.c:192:17: error: 'i2c_comd_reg_t' has no member named 'done'
+  192 |     i2c->comd[1].done = 1;
+      |                 ^
+../main/i2c_low_level.c:195:17: error: 'i2c_comd_reg_t' has no member named 'op_code'
+  195 |     i2c->comd[2].op_code = 3; // READ
+      |                 ^
+../main/i2c_low_level.c:196:17: error: 'i2c_comd_reg_t' has no member named 'byte_num'
+  196 |     i2c->comd[2].byte_num = length;
+      |                 ^
+../main/i2c_low_level.c:197:17: error: 'i2c_comd_reg_t' has no member named 'ack_en'
+  197 |     i2c->comd[2].ack_en = 1;
+      |                 ^
+../main/i2c_low_level.c:198:17: error: 'i2c_comd_reg_t' has no member named 'ack_exp'
+  198 |     i2c->comd[2].ack_exp = 0; // Expect ACK from slave
+      |                 ^
+../main/i2c_low_level.c:199:17: error: 'i2c_comd_reg_t' has no member named 'done'
+  199 |     i2c->comd[2].done = 1;
+      |                 ^
+../main/i2c_low_level.c:202:17: error: 'i2c_comd_reg_t' has no member named 'op_code'
+  202 |     i2c->comd[3].op_code = 1; // STOP
+      |                 ^
+../main/i2c_low_level.c:203:17: error: 'i2c_comd_reg_t' has no member named 'byte_num'
+  203 |     i2c->comd[3].byte_num = 0;
+      |                 ^
+../main/i2c_low_level.c:204:17: error: 'i2c_comd_reg_t' has no member named 'ack_en'
+  204 |     i2c->comd[3].ack_en = 0;
+      |                 ^
+../main/i2c_low_level.c:205:17: error: 'i2c_comd_reg_t' has no member named 'done'
+  205 |     i2c->comd[3].done = 1;
+      |                 ^
+ninja: build stopped: subcommand failed.

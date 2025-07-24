@@ -1,0 +1,2 @@
+source /root/DSA/I2C/build/gdbinit/symbols
+source /root/DSA/I2C/build/gdbinit/connect
