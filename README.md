@@ -79,9 +79,15 @@ Follow the ESP-IDF Getting Started Guide to set up the ESP-IDF toolchain.
 Clone the Repository: git clone https://github.com/your-username/ESP32-I2C-Driver.git cd ESP32-I2C-Driver
 
 
-Clone the Repository:
-git clone https://github.com/your-username/ESP32-I2C-Driver.git
+## Download and Build
+
+Clone this repository and navigate into it:
+
+```bash
+git clone https://github.com/gauravkumar2424/ESP32-I2C-Driver.git
 cd ESP32-I2C-Driver
+
+```
 
 
 Configure the Project:
@@ -90,7 +96,7 @@ Run the ESP-IDF configuration tool:idf.py menuconfig
 
 Verify I2C settings (SDA pin 9, SCL pin 8, 100 kHz clock speed) match your hardware.
 
-Build the Project: idf.py build
+Build the Project:  idf.py build
 
 Flash to ESP32-S3:
 
@@ -98,7 +104,7 @@ Connect your ESP32-S3 board via USB. Flash the firmware (replace /dev/ttyUSB0 wi
 
 Monitor Output: idf.py monitor
 
-🚀 Usage The main.c file provides a ready-to-run example that:
+ Usage The main.c file provides a ready-to-run example that:
 
 Initializes the I2C driver with SDA (pin 9), SCL (pin 8), and 100 kHz clock speed. Scans the I2C bus to detect devices (addresses 0x08–0x77). Writes 4 bytes (0x12, 0x34, 0x56, 0x78) to an EEPROM at address 0x50. Reads 4 bytes from the EEPROM and logs the results.
 
@@ -108,7 +114,7 @@ Edit main.c to adjust I2C parameters (e.g., pins, clock speed). Use i2c_low_leve
 
 Example Log Output: image
 
-🧪 Testing
+Testing
 
 Hardware Setup: Connect an I2C device (e.g., AT24C02 EEPROM) to SDA (pin 9) and SCL (pin 8) with 4.7kΩ pull-up resistors. I2C Scanner: Detects devices on the bus, logging their addresses. EEPROM Test: Verifies read/write functionality with a 4-byte test sequence. Error Handling: Retries failed transactions (up to 3 attempts) and resets the bus on errors.
 
@@ -116,11 +122,11 @@ Hardware Setup: Connect an I2C device (e.g., AT24C02 EEPROM) to SDA (pin 9) and 
 
 NACK Error Handling: Implemented a retry mechanism and bus reset to handle I2C NACK errors, ensuring robust communication. Interrupt Optimization: Fine-tuned interrupt-driven transactions with FreeRTOS semaphores to minimize latency and ensure reliability. Register-Level Precision: Mastered ESP32-S3 I2C register manipulation for precise control, avoiding high-level driver abstractions. EEPROM Compatibility: Designed flexible addressing (1-byte or 2-byte) to support various I2C devices.
 
-🌟 Future Enhancements
+Future Enhancements
 
 Unit Testing: Integrate a test suite using Unity or CTest to validate driver functionality. Multi-Device Support: Extend the driver to handle multiple I2C devices concurrently. Dynamic Clock Scaling: Add support for dynamic clock speed adjustments based on device requirements. Documentation: Generate Doxygen documentation for detailed code insights.
 
-🤝 Contributing Contributions are welcome to make this driver even more powerful! To contribute:
+ Contributing Contributions are welcome to make this driver even more powerful! To contribute:
 
 Fork the repository. Create a new branch (git checkout -b feature-name). Make your changes and commit (git commit -m "Add feature-name"). Push to the branch (git push origin feature-name). Open a pull request with a clear description of your changes.
 
@@ -167,7 +173,7 @@ Example Log Output:
 
 
  
-🧪 Testing
+Testing
 
 Hardware Setup: Connect an I2C device (e.g., AT24C02 EEPROM) to SDA (pin 9) and SCL (pin 8) with 4.7kΩ pull-up resistors.
 I2C Scanner: Detects devices on the bus, logging their addresses.
@@ -175,35 +181,19 @@ EEPROM Test: Verifies read/write functionality with a 4-byte test sequence.
 Error Handling: Retries failed transactions (up to 3 attempts) and resets the bus on errors.
 
  
-🔧 Challenges Overcome
+## About the Author
 
-NACK Error Handling: Implemented a retry mechanism and bus reset to handle I2C NACK errors, ensuring robust communication.
-Interrupt Optimization: Fine-tuned interrupt-driven transactions with FreeRTOS semaphores to minimize latency and ensure reliability.
-Register-Level Precision: Mastered ESP32-S3 I2C register manipulation for precise control, avoiding high-level driver abstractions.
-EEPROM Compatibility: Designed flexible addressing (1-byte or 2-byte) to support various I2C devices.
+**Gaurav Kumar** – Embedded and AI Engineer
 
-🌟 Future Enhancements
+<img width="273" height="333" alt="image" src="https://github.com/user-attachments/assets/82109628-33ba-4a52-a961-357c8d374bfc" />
 
-Unit Testing: Integrate a test suite using Unity or CTest to validate driver functionality.
-Multi-Device Support: Extend the driver to handle multiple I2C devices concurrently.
-Dynamic Clock Scaling: Add support for dynamic clock speed adjustments based on device requirements.
-Documentation: Generate Doxygen documentation for detailed code insights.
 
-🤝 Contributing
-Contributions are welcome to make this driver even more powerful! To contribute:
 
-Fork the repository.
-Create a new branch (git checkout -b feature-name).
-Make your changes and commit (git commit -m "Add feature-name").
-Push to the branch (git push origin feature-name).
-Open a pull request with a clear description of your changes.
 
-Please adhere to ESP-IDF coding standards and include detailed comments.
-📬 Contact
 
-Name: Gaurav Kumar
-Email: gkumar20112000@gmail.com 
-LinkedIn: www.linkedin.com/in/gaurav-kumar-b89570317
+Passionate about building robust embedded systems and AI-driven solutions, focusing on precision, scalability, and innovation for real-world applications.
+
+
 
 
 Ready to collaborate or discuss embedded systems? Reach out—I’m always up for a challenge!
