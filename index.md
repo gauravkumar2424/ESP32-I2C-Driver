@@ -189,7 +189,8 @@ Error Handling: Retries failed transactions (up to 3 attempts) and resets the bu
 
 **Gaurav Kumar** – Embedded and AI Engineer
 
-<img src="assets/author.jpg" alt="Gaurav Kumar" width="200" style="border-radius:10px;">
+<img width="273" height="333" alt="image" src="https://github.com/user-attachments/assets/82109628-33ba-4a52-a961-357c8d374bfc" />
+
 
 
 
