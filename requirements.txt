@@ -1,0 +1,20 @@
+# ESP32-S3 Predictive Maintenance AI Training System
+# Python dependencies for train_model.py
+
+# Core ML/AI frameworks
+numpy>=1.21.0,<1.24.0
+pandas>=1.3.0
+tensorflow>=2.10.0,<2.16.0
+scikit-learn>=1.0.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.12.0
+
+# Optional: Advanced features
+# transformers>=4.20.0  # For GPT-like models (optional)
+# torch>=1.12.0  # PyTorch backend (optional)
+
+# Development tools
+jupyter>=1.0.0
+ipython>=8.0.0
