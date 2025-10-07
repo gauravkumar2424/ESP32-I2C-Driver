@@ -4,3 +4,13 @@ sdkconfig.old
 *.bin
 *.elf
 *.map
+
+# Python ML outputs
+outputs/
+test_outputs/
+*.pyc
+__pycache__/
+*.log
+.ipynb_checkpoints/
+*.h5
+*.tflite
